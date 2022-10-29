@@ -1,0 +1,154 @@
+.container {
+  width: 100vw;
+  height: 70px;
+  background-color: var(--bear-dark-gray);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 25px;
+  border-bottom: solid var(--bear-green) 1px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.navleft {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navright {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.navlink {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navlink:hover {
+  color: var(--bear-green);
+}
+
+.navlink:hover .navdot {
+  opacity: 1;
+  width: 100%;
+}
+
+.navdot {
+  position: absolute;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: all ease-in .3s;
+  opacity: 0;
+}
+
+.navusericon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: var(--bear-green);
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navdrop {
+  position: absolute;
+  top: 45px;
+  background-color: var(--bear-dark-gray);
+  width: 220px; 
+  transition: all ease-in-out .4s;
+  height: 0;
+  opacity: 0;
+}
+
+.navlink:hover .navdrop {
+  height: 300px;
+  opacity: 1;
+}
+
+.navspace{
+  position: absolute;
+  height: 80px;
+  width: 160%;
+}
+
+.login {
+  width: 120px;
+  height: 40px;
+  background-color: var(--bear-light-gray);
+  border: solid 1px var(--bear-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.login:hover {
+  background-color: var(--bear-green);
+}
+
+.userMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  padding: 1rem;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+  opacity: 0;
+}
+
+.userMenu div svg {
+  width: 35px;
+  height: 35px;
+  color: var(--secondary-color);
+  margin: 0.5rem 1rem;
+  z-index: 4;
+}
+
+.userMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.userMenu li {
+  margin: 1rem;
+  z-index: 4;
+}

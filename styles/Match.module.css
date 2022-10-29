@@ -1,0 +1,39 @@
+.container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  border: solid 1px var(--bear-light-gray);
+}
+
+.contentLeft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.contentRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-end;
+}
+
+.playerLeft {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+
+.playerRight {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+}
+
+.stats {
+
+}

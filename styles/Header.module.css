@@ -1,0 +1,49 @@
+.container {
+  margin-top: 70px;
+  width: 100vw;
+  height: 650px;
+  background-color: var(--bear-light-gray);
+  padding: 20px 40px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentleft {
+  width: 33%;
+  height: 100%;
+}
+
+.contentcenter {
+  width: 33%;
+  height: 100%;
+}
+
+.contentright {
+  width: 33%;
+  height: 100%;
+}
+
+.contentHeader {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: solid 2px var(--bear-green);
+  margin-bottom: 5px
+}
+
+.contentBody {
+  height: 90%;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+}
