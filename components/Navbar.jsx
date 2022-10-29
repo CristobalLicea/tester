@@ -11,7 +11,7 @@ const Navbar = ({isLoggedIn, userName, rokens}) => {
   return(
     <div className={styles.container}>
       <div className={styles.navleft}>
-        <div className={styles.navlink}><Link href="https://charming-conkies-134cee.netlify.app/">Home</Link><div className={styles.navdot}/></div>
+        <div className={styles.navlink}><Link href="https://tester-6jxz.vercel.app/">Home</Link><div className={styles.navdot}/></div>
         <div className={styles.navlink}>Shop<div className={styles.navdot}/></div>
         <div className={styles.navlink}>Matches<div className={styles.navdot}/></div>
         <div className={styles.navlink}>More<div className={styles.navdot}/><div className={styles.navdrop}></div><div className={styles.navspace}></div></div>
@@ -43,7 +43,7 @@ const Navbar = ({isLoggedIn, userName, rokens}) => {
             )}
           </>:<>
             <div className={styles.login}>
-              <Link href="https://charming-conkies-134cee.netlify.app/register">Login / Register</Link>
+              <Link href="https://tester-6jxz.vercel.app/register">Login / Register</Link>
               </div>
           </>}
           

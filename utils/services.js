@@ -61,7 +61,7 @@ export class AuthService extends User {
   async registerUser(email, password, userName) {
     const body = { "email": email, "password": password, "userName": userName}
     try {
-      await axios.post('https://charming-conkies-134cee.netlify.app/api/user/register', body);
+      await axios.post('https://tester-6jxz.vercel.app/api/user/register', body);
       
     } catch (error) {
       throw error
@@ -71,7 +71,7 @@ export class AuthService extends User {
   async logInUser(email, password) {
     const body = { "email": email, "password": password }
     try {
-      const res =  await axios.post('https://charming-conkies-134cee.netlify.app/api/user/login', body, { headers });
+      const res =  await axios.post('https://tester-6jxz.vercel.app/api/user/login', body, { headers });
       Cookies.set("userToken", res.data.token)
       this.setAuthToken(res.data.token);
       this.setBearerHeader(res.data.token);
@@ -88,7 +88,7 @@ export class AuthService extends User {
     const headers = this.getBearerHeader();
     const body = { "_id": id }
     try {
-      const res = await axios.post('https://charming-conkies-134cee.netlify.app/api/user/loggedin', body);
+      const res = await axios.post('https://tester-6jxz.vercel.app/api/user/loggedin', body);
       console.log(res)
       this.setUserData(res.data.data)
     } catch (error) {
